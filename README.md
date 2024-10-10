@@ -34,39 +34,57 @@ InstitutionBancaire : Représente une banque qui gère plusieurs clients.
 Database : Gère une base de données des institutions bancaires et des clients.
 
 ## Exemple d'utilisation
+
 Voici un exemple de scénario d’utilisation du projet :
 
 ## Création de la base de données
+
 banque_database = Database()
 
 ## Ajout d'une institution bancaire
+
 institution_bnp = InstitutionBancaire("BNP")
+
 banque_database.ajouter_institution(institution_bnp)
 
 ## Création de clients
+
 client1 = Client("AFO", "Lina", "Lyon")
+
 client1.salaire = 5000
+
 client1.depenses_mensuelles = 2000
 
 client2 = Client("JEAN", "Joseph", "Paris")
+
 client2.salaire = 6000
+
 client2.depenses_mensuelles = 2500
 
 ## Ajout des clients à l'institution bancaire
+
 institution_bnp.ajouter_client(client1)  # Client de Lyon accepté
+
 institution_bnp.ajouter_client(client2)  # Client de Paris refusé
 
 ## Création de comptes bancaires pour le client1
+
 compte1 = CompteEpargne("12345", "Epargne", 1000, 0.02, "01/01/2023")
+
 compte2 = CompteCourant("67890", "Courant", 500, 1000, 10)
 
 client1.ajouter_compte(compte1)
+
 client1.ajouter_compte(compte2)
 
 ## Ajout d'une opération sur un compte
+
 operation1 = OperationBancaire("Dépôt", 1000, "01/01/2023")
+
 compte1.ajouter_operation(operation1)
 
 ##  Calcul du montant de prêt disponible pour le client1
+
 montant_pret_client1 = client1.calculer_montant_pret()
+
 print(f"Montant du prêt pour {client1.nom} {client1.prenom}: {montant_pret_client1}")
