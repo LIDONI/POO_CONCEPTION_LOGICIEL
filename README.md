@@ -1,4 +1,4 @@
-# Programmation_Oriente_Objet : Gestion de Comptes Bancaires
+# Programmation_Oriente_Objet 
 
 ## Description du projet : Conception de logiciel de gestion de Compte Bancaire
 
