@@ -1,26 +1,31 @@
-# POO_CONCEPTION_LOGICIEL : Gestion de Comptes Bancaires
+# Programmation_Oriente_Objet : Gestion de Comptes Bancaires
 
-## Description du projet
+## Description du projet : Conception de logiciel de gestion de Compte Bancaire
+
 Ce projet est une application de gestion de comptes bancaires, développée en Python en appliquant les principes de la programmation orientée objet (POO). Il permet de simuler des opérations bancaires courantes telles que la création de comptes, la gestion des clients, les opérations sur les comptes (dépôts, retraits), ainsi que la gestion des institutions bancaires et des prêts.
 
 ## Fonctionnalités principales
 
-1. Gestion des clients
+**1. Gestion des clients**
+   
 Ajouter un client avec des informations personnelles (nom, prénom, adresse).
 Lier un ou plusieurs comptes bancaires (courants et épargne) à un client.
 Calculer le montant de prêt disponible pour un client en fonction de son salaire et de ses dépenses mensuelles.
 Filtrer les clients selon leur adresse (par exemple, uniquement ceux situés à Lyon pour certaines institutions bancaires).
-2. Gestion des comptes bancaires
+
+**2. Gestion des comptes bancaires**
 Types de comptes disponibles :
 Compte courant avec découvert autorisé et frais de gestion.
 Compte épargne avec solde initial, taux d’intérêt et date d’ouverture.
 Ajouter des opérations bancaires (dépôts, retraits) sur les comptes.
 Afficher les opérations effectuées sur un compte.
-3. Gestion des institutions bancaires
+
+**3. Gestion des institutions bancaires**
 Ajouter une institution bancaire (ex : BNP, Société Générale).
 Associer des clients à une institution en fonction de leur adresse.
 Retirer automatiquement les clients non localisés à Lyon d'une institution bancaire.
-4. Base de données
+
+**4. Base de données**
 La classe Database permet de gérer une collection d'institutions bancaires et de clients.
 
 ## Structure du projet
@@ -90,8 +95,6 @@ montant_pret_client1 = client1.calculer_montant_pret()
 print(f"Montant du prêt pour {client1.nom} {client1.prenom}: {montant_pret_client1}")
 
 ## 👤 Auteur
-
-Ce projet a été réalisé par :
 
 **khalid OURO-ADOYI**  
 
