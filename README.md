@@ -83,8 +83,21 @@ operation1 = OperationBancaire("Dépôt", 1000, "01/01/2023")
 
 compte1.ajouter_operation(operation1)
 
-##  Calcul du montant de prêt disponible pour le client1
+##  exemple fonctiopnalité  : Calcul du montant de prêt disponible pour le client1
 
 montant_pret_client1 = client1.calculer_montant_pret()
 
 print(f"Montant du prêt pour {client1.nom} {client1.prenom}: {montant_pret_client1}")
+
+## 👤 Auteur
+
+Ce projet a été réalisé par :
+
+**khalid OURO-ADOYI**  
+
+Data Analyst & Engineer | Développeur Power BI ,Qlik sense 
+
+📧 Email : khalidouroadoyi@gmail.com
+🔗 [LinkedIn](https://www.linkedin.com/in/khalid-ouro-adoyi/) | [GitHub](https://github.com/LIDONI)
+
+
